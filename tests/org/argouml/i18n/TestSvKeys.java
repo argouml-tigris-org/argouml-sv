@@ -26,7 +26,17 @@ import org.junit.runners.Parameterized;
 public class TestSvKeys extends CheckKey {
     @Parameters
     public static Collection<Object[]> getAllKeys() {
-	return CheckKey.getKeysFor(new Locale("sv"));
+	return CheckKey.getKeysFor(
+		new Locale("sv"),
+		new CheckKey.IgnoredKey() {
+		    public boolean ignore(String theKey,
+					  Locale theLocale,
+					  ResourceBundle theLabels,
+					  ResourceBundle theRootLabels) {
+			return !theKey.matches("aboutbox..*");
+		    }
+		}
+		);
     }
 
     public TestSvKeys(String theKey, Locale theLocale,
