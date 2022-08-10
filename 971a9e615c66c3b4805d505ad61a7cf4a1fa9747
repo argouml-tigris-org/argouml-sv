@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e99cce19_0ffe16fe",
+        "filename": "Jenkinsfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1016795
+      },
+      "writtenOn": "2022-08-10T10:18:56Z",
+      "side": 1,
+      "message": "Don\u0027t merge this.",
+      "revId": "971a9e615c66c3b4805d505ad61a7cf4a1fa9747",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
